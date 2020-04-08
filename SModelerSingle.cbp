@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CPP" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Script file="lib_finder.script" />
+			<Target title="Win32 Release">
+				<Option output="Debug/SModeler" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_MBCS" />
+					<Add option="-DSINGLE_VERSION" />
+				</Compiler>
+				<Linker>
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="winmm" />
+					<Add library="dsound" />
+					<Add library="comctl32" />
+					<Add library="Shlwapi" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Debug">
+				<Option output="Debug/SModeler" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_MBCS" />
+					<Add option="-DSINGLE_VERSION" />
+				</Compiler>
+				<Linker>
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="winmm" />
+					<Add library="dsound" />
+					<Add library="comctl32" />
+					<Add library="shlwapi" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DSINGLE_VERSION" />
+		</Compiler>
+		<Unit filename="Docreader/CDocWnd.hpp" />
+		<Unit filename="Docreader/dFont.h" />
+		<Unit filename="Docreader/dWebCtrl.hpp" />
+		<Unit filename="Docreader/dWindow.hpp" />
+		<Unit filename="Engine/Tuner.h" />
+		<Unit filename="Engine/delay.h" />
+		<Unit filename="Engine/envelopes.hpp" />
+		<Unit filename="Engine/filters.h" />
+		<Unit filename="Engine/fir_generator.h" />
+		<Unit filename="Engine/formula.hpp" />
+		<Unit filename="Engine/muzFunctions.h" />
+		<Unit filename="Engine/prepareText.h" />
+		<Unit filename="Engine/process.h" />
+		<Unit filename="Engine/wav32.h" />
+		<Unit filename="Engine/wavehandler.hpp" />
+		<Unit filename="Engine/wavetable.hpp" />
+		<Unit filename="Engine/wavetable_osc_spectrums.h" />
+		<Unit filename="Files/1317.h" />
+		<Unit filename="Files/HaPa.h" />
+		<Unit filename="Files/halion.hpp" />
+		<Unit filename="Files/iniFile.hpp" />
+		<Unit filename="Files/multisample.h" />
+		<Unit filename="Interface/CAEditor.hpp" />
+		<Unit filename="Interface/CInside.hpp" />
+		<Unit filename="Interface/Dialogs/dlg.h" />
+		<Unit filename="Interface/Dialogs/dlg1000.h" />
+		<Unit filename="Interface/Dialogs/dlg1100.h" />
+		<Unit filename="Interface/Dialogs/dlg1200.h" />
+		<Unit filename="Interface/Dialogs/dlg1300_gui.h" />
+		<Unit filename="Interface/EnvEditor/CEEBpmNums.hpp" />
+		<Unit filename="Interface/EnvEditor/CEEButton.hpp" />
+		<Unit filename="Interface/EnvEditor/CEEGridBar.hpp" />
+		<Unit filename="Interface/EnvEditor/CEEMenu.hpp" />
+		<Unit filename="Interface/EnvEditor/CEENfoText.hpp" />
+		<Unit filename="Interface/EnvEditor/CEEWnd.hpp" />
+		<Unit filename="Interface/EnvEditor/CEnvEditor.hpp" />
+		<Unit filename="Interface/EnvEditor/TGraphics/TGraphics.hpp" />
+		<Unit filename="Interface/GenAEditor.h" />
+		<Unit filename="Interface/REditor/CButton.hpp" />
+		<Unit filename="Interface/REditor/CFMenu.hpp" />
+		<Unit filename="Interface/REditor/CNMenu.hpp" />
+		<Unit filename="Interface/REditor/CREdit.hpp" />
+		<Unit filename="Interface/REditor/CREwnd.hpp" />
+		<Unit filename="Interface/REditor/LNdigits.hpp" />
+		<Unit filename="Interface/REditor/synthax.h" />
+		<Unit filename="Interface/REditor/tom.h" />
+		<Unit filename="Interface/Tree/CTree_Single.hpp" />
+		<Unit filename="Interface/WaveViewer/CBpmNums.hpp" />
+		<Unit filename="Interface/WaveViewer/CExpButton.hpp" />
+		<Unit filename="Interface/WaveViewer/CGenAView.hpp" />
+		<Unit filename="Interface/WaveViewer/CGridBar.hpp" />
+		<Unit filename="Interface/WaveViewer/CHGridBar.hpp" />
+		<Unit filename="Interface/WaveViewer/CMenu.hpp" />
+		<Unit filename="Interface/WaveViewer/CNavButton.hpp" />
+		<Unit filename="Interface/WaveViewer/CNfoText.hpp" />
+		<Unit filename="Interface/WaveViewer/CVSpectrum.hpp" />
+		<Unit filename="Interface/WaveViewer/CWView.hpp" />
+		<Unit filename="Interface/WaveViewer/CWVwnd.hpp" />
+		<Unit filename="Interface/WaveViewer/CZSlider.hpp" />
+		<Unit filename="Interface/WaveViewer/kase_fft.h" />
+		<Unit filename="Interface/sbar.h" />
+		<Unit filename="PortAudio/pa_host.h" />
+		<Unit filename="PortAudio/pa_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="PortAudio/pa_trace.h" />
+		<Unit filename="PortAudio/pa_win_wmme.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="PortAudio/portaudio.h" />
+		<Unit filename="ccolors.hpp" />
+		<Unit filename="macro.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="res/i.ico" />
+		<Unit filename="res/krs.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="res/resource.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
